@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人学术主页</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      max-width: 840px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+      line-height: 1.6;
+    }
+    a { color: #1772d0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1 { font-size: 2rem; margin-bottom: 5px; }
+    h2 { font-size: 1.3rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 6px; margin-top: 36px; }
+    .intro-table { width: 100%; border-collapse: collapse; margin-bottom: 25px; }
+    .intro-bio { vertical-align: top; padding-right: 25px; }
+    .intro-photo { width: 180px; vertical-align: top; text-align: center; }
+    .intro-photo img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; }
+    .links a { margin-right: 12px; font-weight: 500; }
+    .item-table { width: 100%; border-collapse: collapse; margin-bottom: 22px; }
+    .item-img { width: 190px; vertical-align: top; padding-right: 20px; }
+    .item-img img { width: 100%; border-radius: 4px; border: 1px solid #f0f0f0; }
+    .item-desc { vertical-align: top; }
+    .item-title { font-weight: 600; font-size: 1.02rem; color: #111; }
+    .authors { font-size: 0.92rem; color: #555; margin: 3px 0; }
+    .venue { font-size: 0.92rem; font-style: italic; color: #444; }
+    .me { font-weight: bold; text-decoration: underline; }
+    .tag { font-size: 0.82rem; background: #eef2f7; color: #1772d0; padding: 2px 6px; border-radius: 3px; margin-right: 6px; }
+    ul { padding-left: 20px; margin: 8px 0; }
+    li { margin-bottom: 6px; font-size: 0.95rem; }
+    @media (max-width: 650px) {
+      .intro-table, .intro-table tr, .intro-table td,
+      .item-table, .item-table tr, .item-table td { display: block; width: 100%; }
+      .intro-photo { text-align: left; margin-bottom: 20px; }
+      .item-img { margin-bottom: 10px; width: 100%; max-width: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 个人简介区 -->
+  <table class="intro-table">
+    <tr>
+      <td class="intro-bio">
+        <h1>你的中文名 (Your Name)</h1>
+        <p>本科生 / 研究方向：机械电子工程、智能机器人、强化学习与优化控制。<br>
+        就读于天津理工大学机械工程学院。</p>
+        <p class="links">
+          <a href="mailto:your_email@example.com">Email</a>
+          <a href="https://github.com/your-username" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Google Scholar</a>
+          <a href="#" target="_blank">CV (PDF)</a>
+        </p>
+      </td>
+      <td class="intro-photo">
+        <!-- 暂时使用占位图，后续换成你的真实照片 -->
+        <img src="https://via.placeholder.com/160" alt="Avatar">
+      </td>
+    </tr>
+  </table>
+
+  <!-- 科研论文 -->
+  <h2>Research & Publications</h2>
+
+  <table class="item-table">
+    <tr>
+      <td class="item-img">
+        <img src="https://via.placeholder.com/300x180?text=Paper+Demo" alt="Project preview">
+      </td>
+      <td class="item-desc">
+        <div class="item-title">Reinforcement Learning–Enhanced Evolutionary Algorithm for Multi-Objective Optimal Control of a Laboratory Helicopter</div>
+        <div class="authors"><span class="me">Zhengshuo Wang</span>, Co-author Name, Advisor Name</div>
+        <div class="venue">Swarm and Evolutionary Computation, 2026</div>
+        <div>
+          <a class="tag" href="#">Paper</a>
+          <a class="tag" href="#">Code</a>
+          <a class="tag" href="#">BibTeX</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- 竞赛与工程项目 -->
+  <h2>Engineering Projects</h2>
+
+  <table class="item-table">
+    <tr>
+      <td class="item-img">
+        <img src="https://via.placeholder.com/300x180?text=Robot+Demo" alt="Project preview">
+      </td>
+      <td class="item-desc">
+        <div class="item-title">地铁接触线损伤识别检测装置 / 巡检打磨机器人</div>
+        <div class="venue">专利号 / 竞赛获奖项目</div>
+        <p style="font-size: 0.9rem; margin: 4px 0;">集成双向负压自吸附与机器视觉损伤识别算法，实现接触导线的自主巡检与微米级打磨控制。</p>
+        <div>
+          <a class="tag" href="#">Patent</a>
+          <a class="tag" href="#">Video</a>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- 获奖情况 -->
+  <h2>Selected Honors & Awards</h2>
+  <ul>
+    <li><strong>国家一等奖</strong>，第二十七届中国机器人及人工智能大赛，2025</li>
+    <li><strong>省一等奖</strong>，第十八届全国三维数字化创新设计大赛，2025</li>
+    <li><strong>专业第一名</strong>，连续三学年综合学业排名 1/110</li>
+  </ul>
+
+</body>
+</html>
